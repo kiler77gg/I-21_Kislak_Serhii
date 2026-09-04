@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Реєстрація на навчальний курс</title>
+        </head>
+        <body>
+            <h1>Реєстрація на навчальний курс</h1>
+            <form>
+                <!--Ім'я-->
+                <p>
+                    <label>Ім'я</label><br>
+                    <input type="text" name="firstName" required>
+                </p>
+                <!--Прізвище-->
+                <p>
+                    <label>Прізвище</label><br>
+                    <input type="text" name="lastName" required>
+                </p>
+                <!--Електронна пошта-->
+                <p>
+                    <label>Електронна пошта</label><br>
+                    <input type="email" name="email" required>
+                </p>
+                <!--Номер телефону-->
+                <p>
+                    <label>Номер телефону</label><br>
+                    <input type="tel" name="phone" required>
+                </p>
+                <!--Вік-->
+                <p>
+                    <label>Вік * (14-70)</label><br>
+                    <input type="number" name="age" min="14" max="70" required>
+                </p>
+                <!--Дата народження-->
+                <p>
+                    <label>Дата народження</label><br>
+                    <input type="date" name="birthDate">
+                </p>
+                <!--Пароль-->
+                <p>
+                    <label>Пароль * (мін.8 символів)</label><br>
+                    <input type="password" name="password" minlength="8" required>
+                </p>
+                <!--Повторення пароля-->
+                <p>
+                    <label>Повторіть пароль * (мін.8 символів)</label><br>
+                    <input type="password" name="confirmPassword" minlength="8" required>
+                </p>
+                <!--Рівень підготовки-->
+                <p>
+                    <label>Рівень підготовки</label><br>
+                    <input type="radio" name="level" value="beginner" required> Початковий<br>
+                    <input type="radio" name="level" value="intermediate"> Середній<br>
+                    <input type="radio" name="level" value="advanced"> Високий
+                </p>
+                <!--Теми-->
+                <p>
+                    <label>Теми, які вас цікавлять</label><br>
+                    <input type="checkbox" name="topics" value="html"> HTML<br>
+                    <input type="checkbox" name="topics" value="css"> CSS<br>
+                    <input type="checkbox" name="topics" value="javascript"> JavaScript<br>
+                    <input type="checkbox" name="topics" value="angular"> Angular
+                </p>
+                <!--Формат навчання-->
+                <p>
+                    <label>Формат навчання</label><br>
+                    <select name="format">
+                        <option value="">Оберіть формат</option>
+                        <option value="online">Онлайн</option>
+                        <option value="offline">Офлайн</option>
+                        <option value="mixed">Змішаний</option>
+                    </select>
+                </p>
+                <!--Повідомлення-->
+                <p>
+                    <label>Чому ви хочете пройти цей курс? (макс. 300 символів)</label><br>
+                    <textarea name="message" maxlength="300"></textarea>
+                </p>
+                <!--Кнопки-->
+                <p>
+                    <button type="submit">Відправити</button>
+                    <button type="reset">Очистити</button>
+                </p>
+            </form>
+        </body>
+    </html>
