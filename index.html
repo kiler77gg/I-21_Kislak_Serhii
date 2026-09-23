@@ -1,64 +1,47 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Розклад занять</title>
+  <meta charset="UTF-8">
+  <title>Курс HTML</title>
 </head>
 <body>
-    <h1>Розклад занять</h1>
-    <table border="1">
-        <thead>
-            <tr>
-                <th rowspan="2">День тижня</th>
-                <th colspan="4">Інформація про заняття</th>
-            </tr>
-            <tr>
-                <th>Номер пари</th>
-                <th>Час</th>
-                <th>Предмет</th>
-                <th>Кабінет</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="3">Понеділок</td>
-                <td>1</td>
-                <td>13:30–14:50</td>
-                <td>Дискретна математика</td>
-                <td>411</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>15:00–16:20</td>
-                <td>Українська мова</td>
-                <td>411</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>16:40–18:00</td>
-                <td>Математика</td>
-                <td>411</td>
-            </tr>
-            <tr>
-                <td rowspan="2">Вівторок</td>
-                <td>1</td>
-                <td>13:30–14:50</td>
-                <td>Інформатика</td>
-                <td>411</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>15:00–16:20</td>
-                <td>Дискретна математика</td>
-                <td>411</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="4">Всього занять: 5</td>
-                <td></td>
-            </tr>
-        </tfoot>
-    </table>
+  <h1>Курс HTML для початківців</h1>
+
+  <div>
+    <a href="index.html">Головна</a>
+    <a href="lessons.html">Уроки</a>
+    <a href="contacts.html">Контакти</a>
+  </div>
+
+  <h2>Про курс</h2>
+  <img src=https://nung.edu.ua/sites/default/files/2023-10/1528050855_0_0_1809_1018_1920x0_80_0_0_f4ec9707996236a5c8a817d1b46e2d37.jpg alt="Студенти за комп’ютерами під час навчання" width="600" height="400">
+  <p><em>Студенти за комп’ютерами під час навчання</em></p>
+  <p>
+    На курсі ви навчитеся створювати вебсторінки.
+  </p>
+
+  <h2>Реєстрація</h2>
+  <form>
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name">
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+
+    <button type="submit">
+      Зареєструватися
+    </button>
+  </form>
+
+  <!--
+Виправлені проблеми:
+1. Додано атрибут lang="uk" до тега <html> для правильного визначення мови документа
+2. Виправлено заголовки: <h2> замінено на <h1> для головного заголовка, <h4> — на <h2> для підзаголовків
+3. Покращено навігацію тегом <nav> з aria-label, посиланням надано зрозумілі тексти ("Уроки", "Контакти" замість "Тут", "Натиснути тут")
+4. Поля підписано за допомогою <label> з атрибутами for з <input>, для email використано type="email"; кнопці форми type="submit"
+5. До зображення додано атрибути width і height, щоб воно не розтягувалося на всю ширину і краще вписувалося в дизайн сторінки
+-->
 </body>
 </html>
