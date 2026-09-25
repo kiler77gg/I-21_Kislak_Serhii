@@ -1,47 +1,37 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <title>Курс HTML</title>
-</head>
-<body>
-  <h1>Курс HTML для початківців</h1>
-
-  <div>
-    <a href="index.html">Головна</a>
-    <a href="lessons.html">Уроки</a>
-    <a href="contacts.html">Контакти</a>
-  </div>
-
-  <h2>Про курс</h2>
-  <img src=https://nung.edu.ua/sites/default/files/2023-10/1528050855_0_0_1809_1018_1920x0_80_0_0_f4ec9707996236a5c8a817d1b46e2d37.jpg alt="Студенти за комп’ютерами під час навчання" width="600" height="400">
-  <p><em>Студенти за комп’ютерами під час навчання</em></p>
-  <p>
-    На курсі ви навчитеся створювати вебсторінки.
-  </p>
-
-  <h2>Реєстрація</h2>
-  <form>
-    <label for="name">Ім'я:</label>
-    <input type="text" id="name" name="name">
-    <br><br>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-    <br><br>
-
-    <button type="submit">
-      Зареєструватися
-    </button>
-  </form>
-
-  <!--
-Виправлені проблеми:
-1. Додано атрибут lang="uk" до тега <html> для правильного визначення мови документа
-2. Виправлено заголовки: <h2> замінено на <h1> для головного заголовка, <h4> — на <h2> для підзаголовків
-3. Покращено навігацію тегом <nav> з aria-label, посиланням надано зрозумілі тексти ("Уроки", "Контакти" замість "Тут", "Натиснути тут")
-4. Поля підписано за допомогою <label> з атрибутами for з <input>, для email використано type="email"; кнопці форми type="submit"
-5. До зображення додано атрибути width і height, щоб воно не розтягувалося на всю ширину і краще вписувалося в дизайн сторінки
--->
-</body>
+    <head>
+    <meta charset="UTF-8">
+    <title>Навчальний центр</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Навчальний центр</h1>
+            <div class="menu">
+                <a href="#">Головна</a>
+                <a href="#">Курси</a>
+                <a href="#">Контакти</a>
+            </div>
+        </div>
+        <div class="notice">
+            <strong>Важливо:</strong> Реєстрацію на курси вже розпочато!
+        </div>
+        <h2 class="section-title">Наші курси</h2>
+        <div class="card">
+            <h3>Основи HTML</h3>
+            <p>Оформлення та стилізація вебсторінок.</p>
+            <p><b>Тривалість:</b> 4 тижнів.</p>
+        </div>
+        <div class="card">
+            <h3>Основи CSS</h3>
+            <p>Оформлення та стилізація вебсторінок.</p>
+            <p><b>Тривалість:</b> 5 тижнів.</p>
+        </div>
+        <div class="card">
+            <h3>Основи JavaScript</h3>
+            <p>Створення інтерактивних вебсторінок.</p>
+            <p><b>Тривалість:</b> 8 тижнів.</p>
+        </div>
+    </body>
 </html>
